@@ -1,0 +1,44 @@
+{
+  "name": "@fourtune-types/realm-js-and-web",
+  "version": "0.0.0",
+  "author": "Anio Software <info@anio.software>",
+  "description": "Types for the @fourtune/realm-js-and-web API.",
+  "license": "MIT",
+  "exports": {
+    "./_versionless": {
+      "types": "./dist/_versionless.runtime/index.d.mts"
+    },
+    "./v0/assets": {
+      "types": "./dist/v0.assets/index.d.mts"
+    },
+    "./v0/autogenerate": {
+      "types": "./dist/v0.autogenerate/index.d.mts"
+    },
+    "./v0/project": {
+      "types": "./dist/v0.project/index.d.mts"
+    },
+    "./v0/runtime": {
+      "types": "./dist/v0.runtime/index.d.mts"
+    },
+    "./v0/utils": {
+      "types": "./dist/v0.utils/index.d.mts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourtune-types-org/realm-js-and-web.git"
+  },
+  "type": "package",
+  "devDependencies": {
+    "@fourtune-types/fourtune": "^0.0.2",
+    "@fourtune/core": "^0.1101.0",
+    "@fourtune/realm-js": "^0.31010.0",
+    "fourtune": "^0.30000.1"
+  },
+  "scripts": {
+    "prepare": "./node_modules/.bin/fourtune ."
+  },
+  "files": [
+    "./dist/"
+  ]
+}
